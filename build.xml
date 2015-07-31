@@ -21,6 +21,7 @@
             <test name="com.marsrover.MarsRoverTest"/>
             <test name="com.marsrover.MoveTest"/>
             <test name="com.marsrover.TurnLeftTest"/>
+            <test name="com.marsrover.TurnRightTest"/>
             <classpath>
                 <pathelement location="out"/>
                 <path refid="classpath"/>
