@@ -15,12 +15,21 @@ public class MarsRoverTest {
     }
 
     @Test
-    public void foo() {
+    public void marsRoverKnowsHowToTurnLeftWhenFacingNorth() {
         MarsRover marsRover = new MarsRover(1, 2, "N");
 
         marsRover.turnLeft();
 
         assertEquals(new MarsRover(1, 2, "W").toString(), marsRover.toString());
+    }
+
+    @Test
+    public void marsRoverKnowsHowToTurnLeftWhenFacingAnyDirection() {
+        MarsRover marsRover = new MarsRover(1, 2, "W");
+
+        marsRover.turnLeft();
+
+        assertEquals(new MarsRover(1, 2, "S").toString(), marsRover.toString());
     }
 
 }
