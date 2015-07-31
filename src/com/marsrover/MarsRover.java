@@ -40,6 +40,13 @@ public class MarsRover {
             direction = "S";
     }
     public void move() {
-        yCoordinate++;
+        if (direction.equals("N"))
+            yCoordinate++;
+        else if (direction.equals("W"))
+            xCoordinate--;
+        else if (direction.equals("S"))
+            yCoordinate--;
+        else if (direction.equals("E"))
+            xCoordinate++;
     }
 }
