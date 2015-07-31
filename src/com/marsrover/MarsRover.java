@@ -17,4 +17,8 @@ public class MarsRover {
     public String toString() {
         return xCoordinate + " " + yCoordinate + " " + direction;
     }
+
+    public void turnLeft() {
+        direction = "W";
+    }
 }

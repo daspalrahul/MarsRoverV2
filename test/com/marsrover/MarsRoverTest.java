@@ -14,4 +14,13 @@ public class MarsRoverTest {
         assertEquals("1 2 N", marsRover.toString());
     }
 
+    @Test
+    public void foo() {
+        MarsRover marsRover = new MarsRover(1, 2, "N");
+
+        marsRover.turnLeft();
+
+        assertEquals(new MarsRover(1, 2, "W").toString(), marsRover.toString());
+    }
+
 }
