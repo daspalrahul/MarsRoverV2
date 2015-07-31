@@ -41,4 +41,12 @@ public class MarsRoverTest {
         assertEquals(new MarsRover(1, 2, "E").toString(), marsRover.toString());
     }
 
+    @Test
+    public void marsRoverKnowsHowToTurnRightWhenFacingAnyDirection() {
+        MarsRover marsRover = new MarsRover(1, 2, "E");
+
+        marsRover.turnRight();
+
+        assertEquals(new MarsRover(1, 2, "S").toString(), marsRover.toString());
+    }
 }
