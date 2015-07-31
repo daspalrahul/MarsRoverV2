@@ -9,7 +9,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         while (true) {
             String roverPosition = sc.nextLine();
-            if (roverPosition == null)
+            if (roverPosition.isEmpty())
                 break;
             String commands = sc.nextLine();
             String[] initialPosition = roverPosition.split(" ");
