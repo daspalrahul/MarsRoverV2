@@ -39,4 +39,7 @@ public class MarsRover {
         else if (direction.equals("E"))
             direction = "S";
     }
+    public void move() {
+        yCoordinate++;
+    }
 }
