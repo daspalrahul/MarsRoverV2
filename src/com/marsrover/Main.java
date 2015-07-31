@@ -17,7 +17,7 @@ public class Main {
             Parser parser = new Parser(marsRover);
             MarsRoverApp marsRoverApp = new MarsRoverApp(marsRover, parser, commands);
             String finalRoverPosition = marsRoverApp.startRoverAndPerformOperations();
-            System.out.print(finalRoverPosition);
+            System.out.println(finalRoverPosition);
         }
     }
 }
